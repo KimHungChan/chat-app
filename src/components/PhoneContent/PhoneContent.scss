@@ -1,0 +1,96 @@
+@import '../../colors.scss';
+
+.phone-content {
+  background: $light-greyish-violet;
+  font-size: 0.5rem;
+  padding-top: 12px;
+  height: 100%;
+
+  @mixin center-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @mixin chat-block {
+    padding: 6px 8px;
+    max-width: 128px;
+  }
+
+  .user-message {
+    @include center-content;
+    @include chat-block();
+    width: 128px;
+
+    color: $moderate-violet;
+    background-color: $very-light-violet;
+    border-radius: 10px 10px 10px 4px;
+  }
+
+  .contact-message {
+    @include center-content();
+    @include chat-block();
+    margin-left: auto;
+    border-radius: 10px 10px 4px 10px;
+    background: white;
+    box-shadow: 0px 10px 44px -1px rgba(0, 0, 62, 0.25);
+  }
+
+  .images {
+    display: flex;
+    justify-content: space-evenly;
+    width: 136px;
+    margin-left: auto;
+    margin-top: 8px;
+
+    > img {
+      width: 40px;
+      height: 40px;
+      border-radius: 10px;
+    }
+  }
+
+  .input-container {
+    display: flex;
+    height: 33.91px;
+    > input {
+      width: 100%;
+      border: none;
+    }
+
+    .send-button {
+      width: 24.27px;
+      height: 24.22px;
+      border-radius: 1rem;
+      background: $very-dark-desaturated-violet;
+    }
+  }
+
+  div {
+    margin-bottom: 8px;
+  }
+
+  div:nth-child(1) {
+    height: 34px;
+  }
+
+  div:nth-child(2) {
+    height: 34px;
+  }
+  div:nth-child(4) {
+    height: 34px;
+  }
+  div:nth-child(5) {
+    height: 23px;
+  }
+  div:nth-child(6) {
+    margin-top: 8px;
+    height: 45px;
+  }
+  div:nth-child(7) {
+    height: 32px;
+  }
+  div:nth-child(8) {
+    height: 32px;
+  }
+}

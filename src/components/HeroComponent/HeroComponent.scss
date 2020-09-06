@@ -1,0 +1,112 @@
+@import '../../colors.scss';
+@import '../../variables.scss';
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  z-index: 1;
+  background: none;
+  height: 100%;
+
+  .mobile-illustration {
+    width: 247px;
+    height: 505px;
+    background-color: $white;
+    margin: 0 auto;
+    border-radius: 30px;
+    box-shadow: 0px 30px 60px 0px $box-purple;
+    padding: 11px 9.5px;
+
+    .top-section {
+      width: 100%;
+      height: 75px;
+      background: $light-greyish-violet;
+
+      .background {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        border-radius: 20px 20px 6px 6px;
+        background: linear-gradient(
+          -90deg,
+          rgba(2, 0, 36, 1) 0%,
+          rgba(233, 66, 255, 1) 0%,
+          rgba(136, 56, 255, 1) 100%
+        );
+      }
+
+      .notch {
+        background: $white;
+        width: 129px;
+        height: 29px;
+        border-radius: 0 0 14px 14px;
+        position: relative;
+        top: -11px;
+        justify-self: center;
+        z-index: 3;
+      }
+
+      .contact-container {
+        display: flex;
+        align-items: center;
+        margin-bottom: 12px;
+        padding: 0 15.5px;
+        justify-content: flex-start;
+        width: 100%;
+        > img {
+          margin: 0 8px;
+          width: 24px;
+          height: 24px;
+          border-radius: 1rem;
+        }
+        .contact-name {
+          color: $white;
+          font-size: 11px;
+          font-weight: 500;
+          margin-bottom: 2px;
+        }
+        .contact-status {
+          color: $pale-violet;
+          font-size: 8px;
+        }
+
+        .options {
+          margin-left: auto;
+        }
+
+        .options:after {
+          color: $white;
+          margin-left: auto;
+          content: '\2807';
+          font-size: 13px;
+        }
+      }
+    }
+  }
+
+  .description-container {
+    width: 311px;
+    height: 239px;
+    font-size: 1rem;
+    text-align: center;
+
+    align-self: flex-end;
+    justify-self: flex-start;
+
+    > h1 {
+      font-size: 40px;
+      font-weight: $font-medium;
+      margin-bottom: 18px;
+      color: $very-dark-desaturated-violet;
+    }
+
+    > p {
+      color: $dark-greyish-violet;
+      line-height: 28px;
+    }
+  }
+}

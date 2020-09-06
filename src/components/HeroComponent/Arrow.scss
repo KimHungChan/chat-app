@@ -1,0 +1,11 @@
+@import '../../colors.scss';
+
+.arrow {
+  // margin: 0 0;
+  // margin-right: 8px;
+  width: 4px;
+  height: 10px;
+  background-image: url('../../resources/Arrow@x2.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
