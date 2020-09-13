@@ -10,6 +10,7 @@ function App() {
       <div className='hero-section'>
         <HeroComponent></HeroComponent>
       </div>
+      <div className='watermark'>Michael Chan</div>
     </div>
   );
 }
