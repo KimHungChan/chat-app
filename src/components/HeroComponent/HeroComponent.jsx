@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './HeroComponent.scss';
 import './Arrow.scss';
 import contactPicture from '../../resources/avatar.jpg';
@@ -6,6 +6,32 @@ import PhoneContent from '../PhoneContent/PhoneContent';
 import chatData from './dummyChatData';
 
 const HeroComponent = () => {
+  const [appChatData, setAppChatData] = useState([...chatData]);
+  const [inputText, setInputText] = useState('');
+
+  const updateChatData = () => {
+    if (inputText) {
+      let newChatData = {
+        from: 'self',
+        to: 'Samuel Green',
+        type: 'text',
+        message: inputText,
+      };
+      setAppChatData([...appChatData, newChatData]);
+      setInputText('');
+    }
+  };
+
+  const onInputChange = (e) => {
+    setInputText(e.target.value);
+  };
+
+  const handleKeypress = (e) => {
+    if (e.keyCode === 13) {
+      updateChatData();
+    }
+  };
+
   return (
     <div className='hero'>
       <div className='mobile-illustration'>
@@ -23,7 +49,13 @@ const HeroComponent = () => {
             </div>
           </div>
         </div>
-        <PhoneContent data={chatData}></PhoneContent>
+        <PhoneContent
+          onInputChange={onInputChange}
+          updateChatData={updateChatData}
+          handleKeypress={handleKeypress}
+          inputText={inputText}
+          data={appChatData}
+        ></PhoneContent>
       </div>
       <div className='description-container'>
         <h1>Simple booking</h1>

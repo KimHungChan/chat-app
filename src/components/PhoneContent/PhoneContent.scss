@@ -8,6 +8,28 @@
   border-radius: 0 0 20px 20px;
   height: 417px;
 
+  #scroller * {
+    /* don't allow the children of the scrollable element to be selected as an anchor node */
+    overflow-anchor: none;
+  }
+
+  #anchor {
+    /* allow the final child to be selected as an anchor node */
+    overflow-anchor: auto;
+
+    /* anchor nodes are required to have non-zero area */
+    height: 1px;
+  }
+  ::-webkit-scrollbar {
+    display: none;
+  }
+
+  .message-container {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    max-height: 358px;
+  }
+
   @mixin center-content {
     display: flex;
     justify-content: center;
@@ -57,6 +79,7 @@
       width: 100%;
       border: none;
       height: 100%;
+      outline: 0;
       padding: 0.8rem;
       background: $white;
       z-index: inherit;
@@ -79,6 +102,11 @@
       border: none;
       border-radius: 12px;
       background: $very-dark-desaturated-violet;
+      outline: 0;
+
+      &:hover {
+        cursor: pointer;
+      }
     }
 
     img {

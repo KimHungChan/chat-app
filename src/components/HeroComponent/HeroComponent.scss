@@ -109,4 +109,29 @@
       line-height: 28px;
     }
   }
+
+  @media (min-width: 820px) {
+    height: auto;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    .mobile-illustration {
+      margin: 0;
+      margin-right: 125px;
+      margin-left: 100px;
+    }
+
+    .description-container {
+      h1 {
+        line-height: 48px;
+        height: 53px;
+      }
+      margin: 0;
+      align-self: center;
+      line-height: 28px;
+      min-width: 445px;
+      min-height: 183px;
+      text-align: left;
+    }
+  }
 }

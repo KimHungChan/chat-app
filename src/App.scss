@@ -28,8 +28,8 @@ body {
   );
   border-radius: 255px;
   position: absolute;
-  top: calc(-318px - ((100vh - 800px) * 1.3));
-  left: calc(-90px + ((100vw - 1440px) / 4.7));
+  top: calc(-318px - ((100vh - 800px) * 1.4));
+  left: calc(-90px + ((100vw - 1440px) / 4.6));
 }
 
 @media (max-width: 1440px) {
@@ -50,8 +50,8 @@ body {
   opacity: 0.03;
   border-radius: 255px;
   position: absolute;
-  top: calc(90px + ((100vh - 800px) * 2.3));
-  right: calc(-185px + ((100vw - 1440px) / 7));
+  top: calc(90px + ((100vh - 800px) * 2.45));
+  right: calc(-185px + ((100vw - 1440px) / 7.7));
   float: right;
 }
 

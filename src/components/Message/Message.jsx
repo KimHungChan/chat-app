@@ -2,8 +2,6 @@ import React from 'react';
 import './Message.scss';
 
 const Message = ({ message }) => {
-  console.log('Message -> message', message);
-
   const createMessage = () => {
     let messageClass = '';
     if (message.newChatBlock) {
