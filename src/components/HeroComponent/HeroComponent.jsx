@@ -23,7 +23,7 @@ const HeroComponent = () => {
             </div>
           </div>
         </div>
-        <PhoneContent></PhoneContent>
+        <PhoneContent data={chatData}></PhoneContent>
       </div>
       <div className='description-container'>
         <h1>Simple booking</h1>
