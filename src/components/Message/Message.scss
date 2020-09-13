@@ -7,6 +7,24 @@
   align-items: center;
 }
 
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
 .text {
   width: fit-content;
   max-width: 128px;
@@ -78,6 +96,7 @@
 .left {
   color: $moderate-violet;
   background-color: $very-light-violet;
+  animation: 1s ease-out 0s 1 slideInFromLeft;
 
   &.text {
     border-radius: 10px 10px 10px 4px;
@@ -87,6 +106,7 @@
 .right {
   margin-left: auto;
   color: $desaturated-dark-violet;
+  animation: 1s ease-out 0s 1 slideInFromRight;
 
   &.text {
     border-radius: 10px 10px 4px 10px;

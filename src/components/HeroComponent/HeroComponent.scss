@@ -88,11 +88,21 @@
     }
   }
 
+  @keyframes fadein {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
   .description-container {
     width: 311px;
     height: 239px;
     font-size: 1rem;
     text-align: center;
+    animation: 1s ease-in 0s 1 fadein;
 
     align-self: flex-end;
     justify-self: flex-start;
