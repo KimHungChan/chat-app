@@ -32,6 +32,7 @@ const PhoneContent = ({
       </div>
       <div className='input-container'>
         <input
+          title='text-input'
           type='text'
           placeholder='Type a message...'
           onChange={onInputChange}
@@ -39,7 +40,11 @@ const PhoneContent = ({
           onKeyDown={handleKeypress}
         ></input>
         <div className='button-container'>
-          <button className='send-button' onClick={updateChatData}>
+          <button
+            title='send-button'
+            className='send-button'
+            onClick={updateChatData}
+          >
             <img src={sendButtonImage} alt='' />
           </button>
         </div>
