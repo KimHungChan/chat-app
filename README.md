@@ -1,11 +1,14 @@
+<img src="./src/resources/chat-app.png">
 
 ## Usage
-Live version at: https://chat-app-liart.vercel.app/
-Enter text into the input box and press enter to see new messages.
-Resize page to test responsiveness.
-Refresh to check out animations.
+
+- Live version at: https://chat-app-liart.vercel.app/
+- Enter text into the input box and press enter to see new messages.
+- Resize page to test responsiveness.
+- Refresh to check out animations.
 
 ## Introduction
+
 Challenge by Frontend Mentor: https://www.frontendmentor.io/challenges/chat-app-css-illustration-O5auMkFqY
 
 A front end challenge to add to my portfolio and also keep my skills fresh.
